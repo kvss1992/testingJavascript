@@ -16,5 +16,5 @@ result = "a";
 expect(tempVariable).toEqual(result);
 
 tempVariable = 5;
-result = 5;
+result = 4;
 expect(tempVariable).toBeGreaterThan(result);
