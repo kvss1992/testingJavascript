@@ -1,2 +1,0 @@
-# testingJavascript
-Created with CodeSandbox
