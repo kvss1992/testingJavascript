@@ -1,13 +1,20 @@
-const sum = (a, b) => a + b;
-const sub = (a, b) => a - b;
+const expect = require("./setup-globals");
+const { sum, subtract } = require("./math");
 
-let result = sum(3, 9);
-let expected = 10;
+let result, expected;
 
+result = sum(3, 3);
+expected = 6;
 expect(result).toBe(expected);
 
-result = sub(6, 2);
+result = subtract(8, 4);
 expected = 4;
-if (result !== expected) {
-  throw new Error(`${result} is not equal to ${expected}`);
-}
+expect(result).toBe(expected);
+
+let tempVariable = "a";
+result = "a";
+expect(tempVariable).toEqual(result);
+
+tempVariable = 5;
+result = 5;
+expect(tempVariable).toBeGreaterThan(result);
