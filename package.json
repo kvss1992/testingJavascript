@@ -2,9 +2,9 @@
   "name": "node-sandbox",
   "version": "1.0.0",
   "description": "Simple Node Sandbox",
-  "main": "src/02-abstract-assertions.js",
+  "main": "src/encapsulate-and-isolate-tests.js",
   "scripts": {
-    "start": "nodemon src/02-abstract-assertions.js localhost 8080"
+    "start": "nodemon src/encapsulate-and-isolate-tests.js localhost 8080"
   },
   "dependencies": {},
   "devDependencies": {

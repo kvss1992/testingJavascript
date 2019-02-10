@@ -1,4 +1,4 @@
-module.exports = async function test(title, callback) {
+async function test(title, callback) {
   try {
     await callback();
 
@@ -7,9 +7,9 @@ module.exports = async function test(title, callback) {
     console.error(`✗ ${title}`);
     console.error(error);
   }
-};
+}
 
-module.exports = function expect(actual) {
+function expect(actual) {
   return {
     toBe(expected) {
       if (actual !== expected) {
@@ -27,4 +27,6 @@ module.exports = function expect(actual) {
       }
     }
   };
-};
+}
+
+module.exports = { test, expect };
